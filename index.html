@@ -1,4 +1,3 @@
-<!-- https://marvelousamir.github.io/Portfolio/ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- LINK FOR THE FONT -->
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+	<!-- LINK FOR THE ICONS -->
 	<script src="https://kit.fontawesome.com/d2a695c04b.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="lightbox/css/lightbox.css">
-    <script src="lightbox/js/jquery-1.11.0.min.js"></script>
-    <script src="lightbox/js/lightbox.js"></script>
 </head>
 <body>
+
+	<!-- NAVIGATION BAR -->
 	<nav>
 		<input type="checkbox" id="check">
 		<label for="check" class="checkbtn">
@@ -27,6 +27,9 @@
 			<li class="item"><a href="#proj"><i class="fa-solid fas fa-folder-open"></i>&nbsp;&nbsp;Projects</a></li>
 		</ul>
 	</nav>
+	<!-- END OF NAVIGATION BAR -->
+
+	<!-- HOME SECTION -->
 		<section id="home">
 			<div class="container">
 				<div class="user">
@@ -36,7 +39,7 @@
 					<h4>Hi! I am</h4>
 					<h2>Almira Guevarra</h2>
 					<p>Web Developer</p>
-					<p>almirag548@gmail.com</p>
+					<p style="color: blue;">almirag548@gmail.com</p>
 					<p>+63 938 4529 221</p>
 					<br>
 					<p>
@@ -47,13 +50,22 @@
 				</div>
 			</div>
 		</section>
+	<!-- END OF HOME SECTION -->	
+
+	<!-- ABOUT ME SECTION -->
 		<section id="about">
 			<br>
-			<div class="rectangle" style="height: 300px;">
+			<div class="rectangle" style="height: 320px;">
 				<h2>About Me</h2>
-				<p></p>
+				<div class="about-desc">
+					<h3>A full-time web developer for Coca-Cola Beverages Philippines, Inc. in Sta. Rosa Plant located at Sta. Rosa, Laguna.</h3>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficient in PHP and HTML, which makes my job easier because I am in charge of creating and managing websites. Other programming languages are familiar to me, but not an expert in them. I knew I wanted to work for the Coca-Cola Company before I entered college since both my father and brother were already working there. As a result, when the company advertised for new employees after I graduated, I applied without hesitation. Working for the company I want and being with my family makes me happy. Also, it is incredible to work with outstanding individuals while doing what I enjoy and excel at.</p>
+				</div>
 			</div>
 		</section>
+	<!-- END OF ABOUT ME SECTION -->
+
+	<!-- EDUCATIONAL BACKGROUND SECTION -->
 		<section id="educ" style="text-align: center;">
 			<br>
 			<h2>Educational Background</h2>
@@ -85,6 +97,9 @@
 			  </div>
 			</div>
 		</section>
+	<!-- END OF EDUCATIONAL BACKGROUND SECTION -->
+
+	<!-- CERTIFICATE SECTION -->
 		<section id="cert">
 			<br>
 			<div class="rectangle" style="height: 570px;">
@@ -92,43 +107,116 @@
 				<br>
 				<div class="row">
 				  <div class="column-cert">
-				    <img class="images" src="images/certificates/codeigniter.jpg" style="width:600px; height:400px;">
+				    <img src="images/certificates/codeigniter.jpg" style="width:600px; height:400px;">
 				    <h4>Getting Started With CodeIgniter Framework</h4>
 				  </div>
 				  <div class="column-cert">
-				    <img class="images" src="images/certificates/aws.jpg" style="width:600px; height:400px;">
+				    <img src="images/certificates/aws.jpg" style="width:600px; height:400px;">
 				    <h4>AWS Cloud Practitioner Training</h4>
 				  </div>
 				</div>
 			</div>
 		</section>
+	<!-- END OF CERTIFICATE SECTION -->
+
+	<!-- PROJECT SECTION -->
 		<section id="proj">
 			<br>
 			<h2>Projects</h2>
 			<br>
 			<div class="row">
 			  <div class="column-proj">
-			    <img class="images" src="images/projects/travelocco.png" style="width:450px; height:300px;">
-			    <div class="proj-desc">
-				    <h4>TraveLocco</h4>
-				    <h5>December 2022</h5>
+			  	<div class="proj-pic">
+				    <img id="myImg" src="images/projects/travelocco.png" alt="TraveLocco" style="width:450px; height:300px;">
+				    <div id="myModal" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img01">
+					</div>
+				<div class="proj-desc">
+					<h4>TraveLocco</h4>
+					<h5>December 2022</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;This is the final project that our team made for the Advanced Web Development Lecture subject. It is a travel agency website that offers wonderful destinations in the Philippines. This is made using HTML, CSS, JavaScript, and AJAX.</p>
 				</div>
 			  </div>
+			</div>
 			  <div class="column-proj">
-				<img class="images" src="images/projects/athletemonitoringsystem.png" style="width:450px; height:300px;">
+			  	<div class="proj-pic">
+					<img id="myImg2" src="images/projects/athletemonitoringsystem.png" alt="Athlete Monitoring System" style="width:450px; height:300px;">
+					<div id="myModal2" class="modal">
+						  <span class="close2">&times;</span>
+						  <img class="modal-content" id="img02">
+					</div>
+				</div>
 				<div class="proj-desc">
 					<h4>Athlete Monitoring System</h4>
 					<h5>December 2020</h5>	
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;This is the final project that our team made for the Object-Oriented Programming (OOP) Laboratory subject. It includes features for logging in and out as well as signing up. The user can also add, update, delete, and search athlete's information, gameplay's data, and sport's data. This is made using Java. </p>
 				</div>    
 			  </div>
 			  <div class="column-proj">
-			  	<img class="images" src="images/projects/employeemonitoringsystem.png" style="width:450px; height:300px;">
-			  	<div class="proj-desc">	
-			  		<h4>Employee Monitoring System</h4>
-			  	</div>
+			  	<div class="proj-pic">
+				 	<img id="myImg3" src="images/projects/employeemonitoringsystem.png" alt="Employee Monitoring System" style="width:450px; height:300px;">
+				 	<div id="myModal3" class="modal">
+						  <span class="close3">&times;</span>
+						  <img class="modal-content" id="img03">
+					</div>
+				</div>
+				<div class="proj-desc">	
+				 <h4>Employee Monitoring System</h4>
+				 <h5>December 2020</h5>
+				 <p>&nbsp;&nbsp;&nbsp;&nbsp;This is the final project that our team made for the Object-Oriented Programming (OOP) Lecture subject. It includes feature for logging in. The user can also add, update, delete, and search employee's information. This is also made using Java.</p>
+				</div>
 			  </div>
 			</div>
 		</section>
-	</div>
+	<!-- END OF PROJECT SECTION -->
+
+<!-- JAVASCRIPT FOR THE PROJECT PICTURES-->
+<script>
+	//Image1
+	var modal = document.getElementById("myModal");
+	var img = document.getElementById("myImg");
+	var modalImg = document.getElementById("img01");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	//Image2
+	var modal = document.getElementById("myModal2");
+	var img = document.getElementById("myImg2");
+	var modalImg = document.getElementById("img02");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	}
+
+	var span = document.getElementsByClassName("close2")[0];
+
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	
+	//Image3
+	var modal = document.getElementById("myModal3");
+	var img = document.getElementById("myImg3");
+	var modalImg = document.getElementById("img03");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	}
+
+	var span = document.getElementsByClassName("close3")[0];
+
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+</script>
 </body>
 </html>
