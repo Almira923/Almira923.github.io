@@ -9,6 +9,13 @@ body{
   font-family: 'Fira Sans', sans-serif;
   background: #B0D5C7;
 }
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
 
 /*NAVIGATION BAR*/
 nav{
@@ -333,4 +340,18 @@ a.active, a:hover{
   content: "";
   clear: both;
   display: table;
+}
+/*FOOTER*/
+#footer {
+  position: absolute;
+  background-color: #033E3E;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+#footer h6{
+  margin-top: 1%;
 }
